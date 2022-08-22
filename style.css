@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1100px;
+    margin: 0px auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.header_text h2{
+    text-align: center;
+}
+.header_seach{
+    padding: 20px;
+}
+.header_seach_inputs{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 320px;
+    max-width: 460px;
+    margin: 0px auto;
+}
+.header_seach_inputs input{
+    border: none !important;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    min-width: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+    font-size: 24px;
+    padding-left: 20px;
+}
+.header_seach_inputs button img{
+    width: 20px;
+    height: 20px;
+}
+input:focus{
+    outline: none;
+
+}
+.header_seach_inputs button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    box-sizing: border-box;
+}
+.importado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 10px;
+    justify-content: space-evenly;
+}
+.gallery{
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.picture{
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 0px 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
+}
+.picture img{
+    min-width: 300px;
+    min-height: 400px;
+    transition: all 1s;
+}
+.picture:hover img{
+    transform: scale(1.1);
+}
+.picture_althor{
+    position: absolute;
+    height: 0%;
+    bottom: -15px;
+    padding: 15px;
+    color: white;
+    transition: all 0.5s;
+    width: 100%;
+}
+.picture:hover .picture_althor{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+    height: 50px;
+}
+.gallery_footer{
+    margin-top: 20px;
+
+}
+.gallery_footer small{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+
+}.gallery_footer a{
+    color: #000;
+    font-weight: bold;
+}
+.gotop{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+.gotop img{
+    width: 100%;
+}
+@media  screen and (max-width:425px){
+    header{
+        padding: 30px 10px;
+    }
+    .header_seach_inputs input{
+        min-width: 300px;
+    }
+    .gallery{
+        padding: 10px;
+    }
+}
